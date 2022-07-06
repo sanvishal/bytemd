@@ -11,6 +11,7 @@ export const Editor: React.FC<EditorProps> = ({ onChange, ...props }) => {
   const onChangeRef = useRef<EditorProps['onChange']>()
 
   useEffect(() => {
+    console.log('testing inside fork');
     if (!el.current) return
 
     const editor = new bytemd.Editor({
