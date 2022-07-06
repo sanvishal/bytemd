@@ -37,6 +37,7 @@
     "svelte"
   ],
   "scripts": {
+    "prepare": "npm install",
     "build": "node scripts/pre.mjs && tsdv build && node scripts/post.mjs",
     "test": "tsdv test"
   },
