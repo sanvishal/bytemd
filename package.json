@@ -7,7 +7,7 @@
     "dev": "pnpm --filter playground dev",
     "format": "sort-package-json package.json 'packages/*/package.json'",
     "prepare": "npm install",
-    "postinstall": "node scripts/postinstall.mjs && pnpm format &&sort-json packages/*/locales/*.json",
+    "postinstall": "node scripts/postinstall.mjs && pnpm format && sort-json packages/*/locales/*.json",
     "pub": "pnpm build && pnpm --recursive --registry https://registry.npmjs.org/ publish --access public",
     "release": "node scripts/release.mjs",
     "test": "pnpm --filter bytemd test"
